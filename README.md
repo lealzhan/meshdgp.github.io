@@ -1,3 +1,4 @@
 # meshdgp.github.io
 computer graphics mesh processing
-this is a test file
+graphicsresearch@qq.com
+http://item.jd.com/11587555.html
