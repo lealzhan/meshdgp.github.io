@@ -1,72 +1,148 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Meshdgp by Hui Zhao</title>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ 
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>MeshDGP: A Mesh Processing Algorithms Framework</title>
+	<link rel="stylesheet" type="text/css" href="./stylesheets/main.css" media="screen, print"> 
+</head>
+<body class="PageContainer" style="zoom: 1;">
+<div class="PaperPage">
+     
+	<div class="PublishInfo">
+			Published in
+			
+		 <span class="BookTitle">GitHub</span>
+		  
+	</div>
+	 
+	
+	
+	 <div class="TitleBar">
+	<div style="position:relative;z-index: 9999999999"> </div><h1>MeshDGP: A Mesh Processing Algorithms Framework in C#</h1>
+	</div>
+	<div class="AuthorBar">
+	<ul class="AuthorList">
+ 
+			<li>
+				<span class="Author"><a href="http://meshdgp.github.io" target="_blank" onclick="stc(this, 2)">
+				Hui Zhao</a></span>
+			</li>
+	 
+		</ul>
+        <!--
+		<ul class="AuthorList">
+			<li>
+				<span class="Affiliation"><sup>1</sup>GOD</span>
+			</li>
+		</ul>  
+		-->
+		
+	</div>
+	
+	<div class="TeaserBar">
+	<img src="./MeshDGP/img/Main/main0.jpg" alt="rendering resutls" class="PaperFigure">
+	</div>
+    <p class="FigureDescription">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Many kinds of mesh processing operations in our framework.</p>
+  	       
+	<div class="AbstractBar">
+	<h2 class="PaperSectionTitle">Abstract</h2>
+    <p class="Abstract">
+  We present a mesh processing algorithms framework.  MeshDGP is developed with C Sharp and includes the dozens of keystone Siggraph mesh processing algorithms. It is a well refacted, module based framework. 
+  MeshDGP includes, but not limit to the following algorithms and functions: HalfEdge, Subdivision, Simplification, Mesh Cut, Segmentation, Laplace deformation, FFD, Green deformation, Mean value Deformation, Mesh Smoothing, Skeleton, Skinning, Morse Function, Spectral Analysis, Vector Field Design, Quadrangulation, Feature Line,GPU Rendering, OpenGL UI,
+ all Linear Parameterization: Harmonic,Linear ABF, LSCM, DCP/DAP,ARAP, Spectral, Gaussian Curvature Based,
+Discrete Exterior Calculus: Trivial Connection, Geodistance, Conformal Flow,
+ Geodistance: Biharmonic, Diffusion, Commute-Time, and so on. To help students learn computer graphics, and mesh processing algorithms, we also provides a series of book to support and explain the algorithms and implementations in MeshDGP.
+ Any question, please email to graphicsresearch@qq.com
+	</div>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="./MeshDGP/MeshDGP.html">Meshdgp</a></h1>
-        <p><a href="./MeshDGP/MeshDGP.html">Computer Graphics Mesh Processing Framework</p></a>
-        <p class="view"><a href="https://github.com/meshdgp">View the Project on GitHub <small>meshdgp</small></a></p>
-        <ul>
-          <li class="single"><a href="https://github.com/meshdgp/meshdgp.github.io">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to MeshDGP Pages.</h3>
-
-<p><a href="./MeshDGP/MeshDGP.html">This mesh processing framework(MeshDGP)</a> is developed by the <a href="http://scholar.harvard.edu/huizhao"> Team of Hui Zhao.</p></a>
-
-<a href="./MeshDGP/MeshDGP.html"><p> All Right is Reserved! </p>
-
-<p>A lot of students have contributed to MeshDGP. They are Luwei Yang, Tong Wu, Fada Li, Nan Dong, Han Meng, Xun Meng, Zihao Li, Haibo Jiang, Anan Zhou, Leyuan Liu. Thanks to them.</p>
-
-<p>MeshDGP demonstrates the dozens of keystone mesh processing algorithms. it could be used as a learning or research framework for students ,researchers and engineers
-
-MeshDGP can also be used to learn the basic algorithms in 3ds Max, Maya</p></a>
-
-<pre><code>$ Topology
-$ Differential Geometry
-$ Linear System
-</code></pre>
-
-<a href="./MeshDGP/MeshDGP.html">
-<p>1. This mesh processing framework(MeshDGP) is developed by the Team of Hui Zhao. All Right is Reserved!</p>
-
-<p>2. MeshDGP is developed with C Sharp and includes the dozens of Keystone Siggraph Mesh Processing Algorithms.</p>
-
-<p>3. HalfEdge, Subdivision, Simplification, Mesh Cut, Segmentation, Laplace deformation, FFD, Green deformation, Mean value Deformation, Mesh Smoothing, Skeleton, Skinning, Morse Function, Spectral Analysis, Vector Field Design, Quadrangulation, Feature Line,GPU Rendering, OpenGL UI</p>
-
-<p>4. All Linear Parameterization: Harmonic,Linear ABF, LSCM, DCP/DAP,ARAP, Spectral, Gaussian Curvature Based.</p>
-
-<p>5. Discrete Exterior Calculus: Trivial Connection, Geodistance, Conformal Flow.</p>
-
-<p>6. Geodistance: Biharmonic, Diffusion, Commute-Time.</p>
-
-<p>7. We also provides a series of book to support and explain the algorithms and implementations in MeshDGP.</p>
-
-<p>8. Any question,Please email to graphicsresearch@qq.com</h3>
-
-</a>
-      </section>
-    </div>
-    <footer>
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
-    </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
-  </body>
-</html>
+    <table class="TwoColumnPaper">
+      <tbody><tr>
+        <td>
+		
+   	<h2 class="PaperSectionTitle">Keywords</h2>
+    <p class="Keywords">Mesh Processing, Differential Geometry, Computer Graphics, OpenGL,GLSL</p>
+
+    <h2 class="PaperSectionTitle">Downloads</h2>
+    
+    <div class="PaperDownloadList">
+        <ul>
+			<a href="./MeshDGP/MeshDGP.html" onclick="stc(this, 5)">
+            <li>
+                <span class="FileTitle">More info</span>
+                <span class="FileDesc">web | page</span>             
+            </li>
+			</a>
+			<a href="" onclick="stc(this, 6)">
+            <li>
+                <span class="FileTitle">Video</span>
+                <span class="FileDesc">Demo Vido </span>
+            </li>
+			</a>
+			<a href="https://github.com/meshdgp/MeshDGP" onclick="stc(this, 5)">
+            <li>
+                <span class="FileTitle">Github Code</span>
+                <span class="FileDesc">web | page</span>             
+            </li>
+			</a>
+        </ul>
+    </div>
+	</td>
+	<td>
+	<h2 class="PaperSectionTitle">Acknowledgements</h2>
+    <p class="Acknowledgements">This mesh processing framework(MeshDGP) is developed by the team of Hui Zhao. All Right is Reserved! A lot of students have contributed to MeshDGP. They are Luwei Yang, Tong Wu, Fada Li, Nan Dong, Han Meng, Xun Meng, Zihao Li, Haibo Jiang, Anan Zhou, Leyuan Liu,.... Thanks to them.
+</p>
+    <h2 class="PaperSectionTitle">Bib</h2>
+    <p class="Acknowledgements">@misc{Hui:MeshDGP:2016,
+   Author = {Hui, Zhao},
+   Year = {2016},
+   Note = {http://meshdgp.github.io/},
+   Title = {MeshDGP: A C# mesh processing framework}
+} 
+
+</p>
+	</td>
+	</tr>
+	</tbody></table>
+	
+	
+	
+	
+	
+	
+	<div class="AbstractBar">
+	<h2 class="PaperSectionTitle">Video</h2>
+    <p class="Abstract">
+  
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+function stc(e,linkIndex){if(document.images){var linkText;if(navigator.appName.toLowerCase()=="microsoft internet explorer"){linkText=e.innerText}else{linkText=e.textContent}if(linkText==""){if(e.firstChild){var firstChild=e.firstChild.nodeName.toUpperCase();if(firstChild=="IMG"){linkText="Image: "+getName(e.firstChild.getAttribute('src'))}}else{var nodeName=e.nodeName.toUpperCase();if(nodeName=="AREA"){linkText="ImageMap: "+e.href}}}if(linkText==""){linkText=e.href}(new Image()).src="/a/i/stg.gif?f="+escape(document.location.href)+"&t="+escape(e.href)+"&i="+linkIndex+"&n="+escape(trimString(linkText))}}function getName(s){if(s.lastIndexOf('/')>=0){return(s.substring(s.lastIndexOf('/')+1,s.length))}else{return(s)}}function trimString(s){return(s.replace(/^\s*/,"").replace(/\s*$/,""))}
+</script>
+
+
+<div></div></body></html>
