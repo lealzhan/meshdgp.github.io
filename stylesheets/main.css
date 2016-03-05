@@ -429,6 +429,14 @@ ul.AuthorList .Affiliation {
   font-size: 15px;
 }
 
+p.Video {
+  padding: 0px 64px;
+  text-align: center;
+  line-height: 130%;
+  font-family:"Times New Roman", Times, serif;
+}
+
+
 .AbstractBar{
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;

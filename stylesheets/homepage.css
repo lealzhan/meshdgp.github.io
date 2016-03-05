@@ -116,6 +116,7 @@ a {
 	display:block;
 	float:left;
 	margin-bottom:2%;
+	text-align: justify;
 }
 .column img{
     margin-bottom: 8px;
