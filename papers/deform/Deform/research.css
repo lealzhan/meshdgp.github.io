@@ -1,0 +1,643 @@
+body
+{
+	background-color: #ddd;
+}
+
+hr.line
+{
+	width: 97%;
+}
+
+div.main
+{
+	width: 100%;
+	min-width: 240px;
+	max-width: 820px;
+	border: 1px solid #999;
+	margin: 10px auto 10px auto;
+	background-color: #fff;
+}
+
+div.header
+{
+	min-width: 200px;
+	max-width: 800px;
+	padding-top: 2px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 2px;
+	margin: 2px 20px 10px 20px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	font-variant: small-caps;
+}
+
+div.logo { color: #999; font-size: 20px; text-decoration: none; }
+div.logo a, div.logo a:visited { color: #999; font-size: 20px; text-decoration: none; }
+div.logo a.selected { color: #300; text-decoration: none; }
+div.logo a:hover { color: #c23; text-decoration: none; }
+
+
+
+/* Block of conference title. */
+div.conference_title
+{
+	clear: left;
+	margin: 30px 20px auto 20px;
+	border: none;
+	
+	min-width: 100px;
+	max-width: 800px;
+	
+	font-size: 10pt;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-style:italic;
+	color: #333333;
+	text-align: center;
+}
+
+/* Block of research title. */
+@media screen and (min-width: 600px) and (max-width: 5000px){
+div.research_title
+{
+	margin: 30px 0px 20px 0px;
+	border: none;//solid 1px #000000;
+	width: 100%;
+	font-size: 20pt;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+}
+}
+
+@media screen and (min-width: 1px) and (max-width: 599px){
+div.research_title
+{
+	margin: 30px 0px 20px 0px;
+	border: none;//solid 1px #000000;
+	width: 100%;
+	font-size: 16pt;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+}
+}
+
+/* Block of authors. */
+div.author_info
+{
+	display: block;
+	margin: 10px 10px auto 10px;
+	border: none;//solid 1px #999999;
+	min-width: 200px;
+	max-width: 800px;
+	
+	font-size: 10pt;
+	font-family: Arial, sans-serif;
+	color: #3a709f;
+	text-align: center;
+	clear: right;
+}
+
+div.author_info a, div.author_info a:visited { color: #3a709f; text-decoration: none; }
+div.author_info a.selected { color: #3a709f; text-decoration: none; }
+div.author_info a:hover { color: #3a709f; text-decoration: underline; }
+
+@media screen and (min-width: 830px) and (max-width: 2000px){
+
+div.author_1
+{
+	position:relative; 
+	left: 35%;
+	display: block;
+    float: left;
+	margin: auto 5px auto 10px;
+}
+
+div.author_2
+{
+	position:relative; 
+	left: 42%;
+	display: block;
+    float: left;
+	margin: auto 5px auto 10px;
+}
+
+div.author_3
+{
+	position:relative; 
+	left: 2%;
+	display: block;
+    float: left;
+	margin: auto 5px auto 10px;
+}
+
+div.author_4
+{
+	position:relative; 
+	left: 2%;
+	display: block;
+    float: left;
+	margin: auto 5px auto 10px;
+}
+
+div.author_5
+{
+	position:relative; 
+	left: 2%;
+	display: block;
+    float: left;
+	margin: auto 5px auto 10px;
+}
+
+div.author_6
+{
+	position:relative; 
+	left: 2%;
+	display: block;
+    float: left;
+	margin: auto 5px auto 10px;
+}
+
+div.author_7
+{
+	position:relative; 
+	left: 2%;
+	display: block;
+	float: left;
+    margin: auto 5px 10px 10px;
+}
+}
+
+@media screen and (min-width: 500px) and (max-width: 829px){
+
+div.author_1
+{
+	position:relative; 
+	left: 2%;
+	display: block;
+    float: left;
+	margin: auto 5px auto 10px;
+}
+
+div.author_2
+{
+	position:relative; 
+	left: 2%;
+	display: block;
+    float: left;
+	margin: auto 5px auto 10px;
+}
+
+div.author_3
+{
+	position:relative; 
+	left: 2%;
+	display: block;
+    float: left;
+	margin: auto 5px auto 10px;
+}
+
+div.author_4
+{
+	position:relative; 
+	left: 2%;
+	display: block;
+    float: left;
+	margin: auto 5px auto 10px;
+}
+
+div.author_5
+{
+	clear: left;
+	position:relative; 
+	left: 2%;
+	display: block;
+    float: left;
+	margin: auto 5px auto 10px;
+}
+
+div.author_6
+{
+	position:relative; 
+	left: 2%;
+	display: block;
+    float: left;
+	margin: auto 5px auto 10px;
+}
+
+div.author_7
+{
+	position:relative; 
+	left: 2%;
+	display: block;
+	float: left;
+    margin: auto 5px 10px 10px;
+}
+}
+
+@media screen and (min-width: 1px) and (max-width: 499px){
+
+div.author_1
+{
+	display: block;
+    float: center;
+	width: 98%;
+	min-width: 120px;
+}
+
+div.author_2
+{
+	display: block;
+    float: center;
+	width: 98%;
+	min-width: 120px;
+}
+
+div.author_3
+{
+	display: block;
+    float: center;
+	width: 98%;
+	min-width: 120px;
+}
+
+div.author_4
+{
+	display: block;
+    float: center;
+	width: 98%;
+	min-width: 120px;
+}
+
+div.author_5
+{
+	display: block;
+    float: center;
+	width: 98%;
+	min-width: 120px;
+}
+
+div.author_6
+{
+	display: block;
+    float: center;
+	width: 98%;
+	min-width: 120px;
+}
+
+div.author_7
+{
+	display: block;
+    float: center;
+	width: 98%;
+	min-width: 120px;
+	margin: auto auto 10px auto;
+}
+}
+
+font.author_sup
+{
+	font-size: 9pt;
+}
+
+/* Block of school. */
+div.university_info
+{
+	clear: both;
+	margin: 10px 10px 10px 10px;
+	border: none;//solid 1px #999999;
+	min-width: 200px;
+	max-width: 800px;
+	
+	font-size: 10pt;
+	font-family: Arial, sans-serif;
+	color: #444;
+	text-align: center;
+}
+
+@media screen and (min-width: 400px) and (max-width: 2000px){
+
+div.university_1
+{
+	display: block;
+    float: center;
+	margin: auto 7px auto 7px;
+}
+
+div.university_2
+{
+	display: block;
+    float: left;
+	margin: auto 7px auto 7px;
+}
+
+div.university_3
+{
+	display: block;
+    float: left;
+	margin: auto 7px auto 7px;
+}
+
+div.university_4
+{
+	display: block;
+    float: left;
+	margin: auto 7px auto 7px;
+}
+
+div.university_5
+{
+	display: block;
+    float: left;
+	margin: auto 7px 20px 7px;
+}
+}
+
+@media screen and (min-width: 1px) and (max-width: 399px){
+
+div.university_1
+{
+	display: block;
+    float: center;
+	width: 98%;
+	min-width: 120px;
+}
+
+div.university_2
+{
+	display: block;
+    float: center;
+	width: 98%;
+	min-width: 120px;
+}
+
+div.university_3
+{
+	display: block;
+    float: center;
+	width: 98%;
+	min-width: 120px;
+}
+
+div.university_4
+{
+	display: block;
+    float: center;
+	width: 98%;
+	min-width: 120px;
+}
+
+div.university_5
+{
+	display: block;
+    float: center;
+	width: 98%;
+	min-width: 120px;
+	margin: auto 7px 20px 7px;
+}
+}
+
+/* Block of main image. */
+div.main_image
+{
+	margin: 20px 20px 20px 20px;
+	border: none;
+	min-width: 200px;
+	max-width: 800px;
+	
+	font-size: 12pt;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	color: #333333;
+	text-align: center;
+}
+
+img.image
+{
+	width: 100%;
+	min-width: 200px;
+	max-width: 800px;
+}
+
+div.asialogo
+{
+	margin: 20px 20px auto 10px;
+	text-align: right;
+}
+
+@media screen and (min-width: 840px) and (max-width: 2000px){
+iframe.video
+{
+	width: 770px;
+	height: 432px;
+}
+}
+@media screen and (min-width: 700px) and (max-width: 839px){
+iframe.video
+{
+	width: 640px;
+	height: 360px;
+}
+}
+@media screen and (min-width: 540px) and (max-width: 699px){
+iframe.video
+{
+	width: 480px;
+	height: 270px;
+}
+}
+@media screen and (min-width: 380px) and (max-width: 539px){
+iframe.video
+{
+	width: 320px;
+	height: 180px;
+}
+}
+@media screen and (min-width: 1px) and (max-width: 379px){
+iframe.video
+{
+	width: 240px;
+	height: 135px;
+}
+}
+
+
+
+
+
+
+@media screen and (min-width: 840px) and (max-width: 2000px){
+iframe.slide
+{
+	width: 740px;
+	height: 594px;
+}
+}
+@media screen and (min-width: 700px) and (max-width: 839px){
+iframe.slide
+{
+	width: 640px;
+	height: 519px;
+}
+}
+@media screen and (min-width: 540px) and (max-width: 699px){
+iframe.slide
+{
+	width: 480px;
+	height: 399px;
+}
+}
+@media screen and (min-width: 380px) and (max-width: 539px){
+iframe.slide
+{
+	width: 320px;
+	height: 279px;
+}
+}
+@media screen and (min-width: 1px) and (max-width: 379px){
+iframe.slide
+{
+	width: 240px;
+	height: 219px;
+}
+}
+
+div.subtitle
+{
+	margin: 20px 20px 10px 20px;
+	border: none;
+	min-width: 200px;
+	max-width: 800px;
+	
+	font-size: 13pt;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: #000000;
+	text-align: left;
+}
+
+/* Block of ABSTRACT. */
+div.abstract_body
+{
+	margin: auto 20px 20px 20px;
+	border: none;
+	min-width: 200px;
+	max-width: 800px;
+	
+	font-size: 10pt;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	color: #000000;
+	text-align: justify;
+}
+
+/* Block of PAPER link. */
+div.paperlink_body
+{
+	margin: auto 20px 20px 20px;
+	border: none;
+	min-width: 200px;
+	max-width: 800px;
+	
+	font-size: 10pt;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	color: #000000;
+	text-align: left;
+}
+div.paperlink_body a, div.paperlink_body a:visited { color: #3a709f;}
+div.paperlink_body a:hover { color: #3a709f; font-weight: bold;}
+
+
+/* Block of figure. */
+div.figure_body
+{
+	margin: auto 20px 20px 20px;
+	border: none;
+	min-width: 200px;
+	max-width: 800px;
+	
+	font-size: 10pt;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	color: #000000;
+	text-align: left;
+}
+
+img.figure
+{
+	width: 98%;
+	min-width: 200px;
+	max-width: 800px;
+}
+
+table.figure_table
+{
+	margin: auto 20px 20px 20px;
+	text-align: center;
+	min-width: 200px;
+	max-width: 800px;
+}
+
+td.figure_3
+{
+	width: 32%;
+}
+
+td.figure_4
+{
+	width: 24%;
+}
+
+td.figure_5
+{
+	width: 19%;
+}
+
+td.figure_6
+{
+	width: 16%;
+}
+
+/* Block of video link. */
+div.video_body
+{
+	margin: auto 20px 20px 20px;
+	border: none;
+	min-width: 200px;
+	max-width: 800px;
+	
+	font-size: 10pt;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	color: #000000;
+	text-align: left;
+}
+div.video_body a, div.video_body a:visited { color: #3a709f;}
+div.video_body a:hover { color: #3a709f; font-weight: bold;}
+
+/* Block of BibTex. */
+div.bibtex_body
+{
+	margin: auto 20px 30px 20px;
+	border: none;
+	min-width: 200px;
+	max-width: 800px;
+	
+	font-size: 8pt;
+	font-family: "Courier New";
+	color: #333333;
+	text-align: left;
+}
+div.bibtex_body a, div.bibtex_body a:visited { color: #3a709f;}
+div.bibtex_body a:hover { color: #3a709f; font-weight: bold;}
+
+div.counter_body
+{
+	margin: auto 20px 10px 20px;
+	border: none;
+	min-width: 200px;
+	max-width: 800px;
+	
+	font-size: 6pt;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	color: #dddddd;
+	text-align: right;
+}
