@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ 
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>MeshDGP Demonstration</title>
+</head>
+<style type="text/css">
+	.row
+	{
+		margin-top: 40px;
+		position: relative;
+		width: 100%
+	}
+	.body
+	{
+		margin-top: 20px;
+	}
+	.row #kuang,#BVH,#capture-1
+	{
+		float: left;
+		padding-left: 40px;
+	}
+	.row #distance,#geo,#GPU
+	{
+		float: left;
+		margin-top: 20px;
+		padding-left: 40px;
+	}
+	.row #GPU_laplace_smooth,#bianxing,#bianxing1
+	{
+		float: left;
+		margin-top: 20px;
+		padding-left: 40px;
+	}
+	.row #bianxing2,#canshuhua,#chabian
+	{
+		float: left;
+		margin-top: 20px;
+		padding-left: 40px;
+	}
+	.row #jinahuaxihua,#labian,#laplace_bianxing
+	{
+		float: left;
+		margin-top: 20px;
+		padding-left: 40px;
+	}
+	.row #laplace_bianxing2,#morse,#morse1
+	{
+		float: left;
+		margin-top: 20px;
+		padding-left: 40px;
+	}
+	.row #morse2,#shengchenggujia,#eigenVector
+	{
+		float: left;
+		margin-top: 20px;
+		padding-left: 40px;
+	}
+	.row #eigenVectorMorse,#tietu,#chongjian
+	{
+		float: left;
+		margin-top: 20px;
+		padding-left: 40px;
+	}
+	.row #AEAP,#Chap1Sphere,#Chap1Bunny
+	{
+		float: left;
+		margin-top: 20px;
+		padding-left: 40px;
+	}
+	.row #Chap2,#Chap3Bunny,#Chap3Cone
+	{
+		float: left;
+		margin-top: 20px;
+		padding-left: 40px;
+	}
+	.row #Chap5BunnySearch,#Chap5BunnyMorse,#Chap6
+	{
+		float: left;
+		margin-top: 20px;
+		padding-left: 40px;
+	}
+	.row #Chap7,#Chap8Cube,#Chap8Tetrahedron
+	{
+		float: left;
+		margin-top: 20px;
+		padding-left: 40px;
+	}
+	.row #Chap8Cylinder,#Chap9Bunny567,#Chap13Bunny567
+	{
+		float: left;
+		margin-top: 20px;
+		padding-left: 40px;
+	}
+	.row #AdvancedChap2,#AdvancedChap3,#AdvancedChap4
+	{
+		float: left;
+		margin-top: 20px;
+		padding-left: 40px;
+	}
+	
+</style>
+<body style="zoom: 1;">
+	<h1 style="text-align:center;">MeshDGP Demos</h1>
+	<div class = "row">
+		<div id = "kuang">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=x0318ek6npj&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id = "BVH">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=c031844pqj1&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id = "capture-1">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=r0318thy286&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>	
+	</div>
+	<div class = "row">
+		<div id="distance">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=a0318ex3dl1&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id="geo">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=g0318pc4cc0&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id="GPU">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=t0318w4gxce&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="row">
+		<div id="GPU_laplace_smooth">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=c0318j5qoa1&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id="bianxing">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=r03186csdyi&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id="bianxing1">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=q0318btwvzu&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="row">
+		<div id="bianxing2">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=y0318j1a046&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id="canshuhua">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=z03182pn9kn&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id="chabian">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=m0318045g02&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="row">
+		<div id="jianhuaxihua">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=m03181z9u66&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id="labian">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=i03183whal7&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id="laplace_bianxing">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=e03189dsvva&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="row">
+		<div id="laplace_bianxing2">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=w0318nv076q&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id="morse">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=d03189jp87w&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id="morse1">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=k0318o2jjbo&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="row">
+		<div id="morse2">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=d0318893fc3&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id="shengchenggujia">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=g0318fk5hir&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id="eigenVector">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=d0318s7ckgp&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="row">
+		<div id="eigenVectorMorse">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=k0318ywx1y1&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id="tietu">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=j0318024vq8&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id="chognjian">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=f03182ec56g&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="row">
+		<div id="AEAP">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=s0318p5gqen&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id="Chap1Sphere">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=l0318lnkmbs&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id="Chap1Bunny">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=s031853wq8j&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="row">
+		<div id="Chap2">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=k0318fuop0j&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id="Chap3Bunny">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=f0318lf35vs&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id="Chap3Cone">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=q0318h85kxg&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="row">
+		<div id="Chap5BunnySearch">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=k0318x6fq49&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id="Chap5BunnyMorse">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=g0318kjerb0&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id="Chap6">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=h0318pmrd6r&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="row">
+		<div id="Chap7">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=e0318zjzhyb&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id="Chap8Cube">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=c03184pmln8&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id="Chap8Tetrahedron">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=c0318ht4vqx&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class="row">
+		<div id="Chap8Cylinder">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=m0318vd2od7&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id="Chap9Bunny567">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=k0318afcvtw&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id="Chap13Bunny">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=t03181n6rx2&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div class= "row">
+		<div id="AdvancedChap2">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=s0318gy687g&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id="AdvancedChap3">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=j0318ahfc8d&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+		<div id = "AdvancedChap4">
+			<iframe frameborder="0" width="400" height="250" src="http://v.qq.com/iframe/player.html?vid=d0318f34l25&tiny=0&auto=0" allowfullscreen></iframe>
+		</div>
+	</div>
+</body>
+
+</html>

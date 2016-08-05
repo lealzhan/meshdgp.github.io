@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.5">
+<title>A Report on Shape Deformation with a Stretching and Bending Energy-Hui Zhao</title>
+<link rel="stylesheet" href="./Deform/research.css" type="text/css">
+</head>
+<body style="zoom: 1;">
+<div class="main">
+	<div class="asialogo">
+		<img src="./Deform/arxiv.png">
+	</div>
+	
+<!-- Here is the research title. -->
+	<div class="research_title">
+		A Report on Shape Deformation with a Stretching and Bending Energy
+	</div>
+	
+<!-- Here is the author information. -->
+	<div   class="author_info">
+		<div class="author_1">
+			<a href="http://meshdgp.github.io/HuiZhao.html">
+			Hui Zhao<sup><font class="author_sup">1*</font></sup>
+			</a>
+		</div>
+		<div  class="author_2">
+			<a href="http://www.eecs.harvard.edu/~sjg/">
+			Steven J. Gortler<sup><font class="author_sup">1</font></sup>
+			</a>
+		</div> 
+	</div>
+	
+<!-- Here is the univerity info. -->
+	<div class="university_info">
+		<div class="university_1">
+			<sup>1</sup> Harvard University
+		</div> 
+		<div class="university_end"></div>
+	</div>
+
+<!-- Here is the conference name. -->
+	<div class="conference_title">
+		arXiv.org
+	</div>
+
+<!-- Here is the selected image of the paper. -->
+	<div class="main_image">
+		<img class="image" src="./Deform/teaser.png">
+	</div>
+	
+	
+<!-- Here is the selected image of the paper. -->
+	<hr class="line">
+	<div class="subtitle">
+		Abstract
+	</div>
+	<div class="abstract_body">
+In this report we describe a mesh editing system that we implemented
+that uses a natural stretching and bending energy defined
+over smooth surfaces. As such, this energy behaves uniformly under
+various mesh resolutions. All of the elements of our approach
+already exist in the literature. We hope that our discussions of these
+energies helps to shed light on the behaviors of these methods and
+provides a unified discussion of these methods.
+	</div>
+	
+	
+	
+<hr class="line">
+	<div class="subtitle">
+		Figure 1
+	</div>
+	
+	<div class="main_image">
+		<img class="image" src="./Deform/pic1.png">
+	</div>
+	<div class="abstract_body">
+		Here we twist a regularly triangulated flat sheet. Three algorithms are shown,
+the original ARAP (spoke) method, the ARAP-Spoke-Rim variant, and our 
+(hybrid) method. At low tessellation rates, the three behave similarly.
+At higher tessellation rates, the two ARAP methods lose their ability to 
+resist bending. Our method is insensitive to this resolution change.
+	</div>
+	
+	<hr class="line">
+	<div class="subtitle">
+		Figure 2
+	</div>
+	
+	<div class="main_image">
+		<img class="image" src="./Deform/pic2.png">
+	</div>
+	<div class="abstract_body">
+		We deform a sphere by five algorithms. The
+original shape with
+one point fixed, and another point as moving handle.  
+In these examples, the two ARAP methods maintain the overall spherical
+shape by concentrating curvature at sharper cusps.
+The stretching-only result wrinkles up completely (there are many
+wrinkled triangulated surfaces in 3D that will be nearly isometric, and we 
+are finding one such local minimum).
+The bending-only
+result allows for too much surface stretching.
+The 
+hybrid result demonstrates the best
+deformation result.
+	</div>
+	
+<!-- Here is the link of the ACM digital library. 
+	<hr class="line">
+	<div class="subtitle">
+		ACM Digital Library
+	</div>
+	<div class="paperlink_body">
+		<img src="./deform/ACM_DL.png">
+		<a href="http://dl.acm.org/citation.cfm?id=2818091" target="_blank">
+		Link to ACM digital library
+		</a>
+	</div>
+-->
+<!-- Here is the link of the paper. -->
+	<hr class="line">
+	<div class="subtitle">
+		Downloads
+	</div>
+	<div class="paperlink_body">
+		<img src="./Deform/pdf.png">
+		Paper download: <a href="./Deform/Deform.pdf">Deform.pdf (2.6MB)</a>
+		<br>
+		<img class="image" src="./Deform/deformsnapshot.jpg">
+	</div>
+	<!--
+	<div class="paperlink_body">
+		<img src="./deform/pdf.png">
+		Supplementary material download: <a href="./Deform/supplemental.pdf">sig16_supp.pdf (29.4MB)</a>
+		<br>
+		 
+	</div>
+    	-->
+<!-- Here is the video of the paper. 
+	<hr class="line">
+	<div class="subtitle">
+		Video
+	</div>
+	<div class="paperlink_body">
+		<img src="./deform/video.png">
+		High resolution MP4: <a href="./Deform/deform.mp4">Deform.mp4 (100MB)</a>
+		<br>
+		<img src="./Deform/video.png">
+		Youtube:
+		<br>
+		<iframe class="video" src="./Deform/Uv5gpqlkpis.html" frameborder="0" allowfullscreen=""></iframe>
+	</div>
+	-->
+<!-- Here is the video of the paper. -->
+	<hr class="line">
+	<div class="subtitle">
+		Slide
+	</div>
+	<div class="paperlink_body">
+		<img src="./Deform/ppt.png">
+		Slide powerpoint file: <a href="./Deform/DeformPPT.pdf">DeformPPT.pdf (??MB)</a>
+		<br>
+		
+		<!--
+		
+		<img src="./deform/ppt.png">
+		SlideShare:
+		<br>
+		<iframe class="slide" src="./deform/c4VbWKPrfwltW5.html" frameborder="0" allowfullscreen=""></iframe>
+		
+		-->
+	</div>
+	
+<!-- Here is the BibTex. -->
+	<hr class="line">
+	<div class="subtitle">
+		Publication
+	</div>
+	<div class="paperlink_body">
+	Hui Zhao,Steven J. Gortler.
+	<b>A Report on Shape Deformation with a Stretching and Bending Energy.</b>
+	 <a href="http://arxiv.org/abs/1603.06821" > http://arxiv.org/abs/1603.06821 </a>
+	</div>
+
+	<div class="paperlink_body">
+		<img src="./Deform/bibtex.png">
+		Bibtex:
+	</div>
+ 
+<div class="bibtex_body">
+    @ARTICLE{2016arXiv160306821Z,   <br>
+   author = {{Zhao}, H. and {Gortler}, S.~J.},   <br>
+    title = "{A Report on Shape Deformation with a Stretching and Bending Energy}",   <br>
+  journal = {ArXiv e-prints},   <br>
+archivePrefix = "arXiv",     <br>
+   eprint = {1603.06821},     <br>
+ primaryClass = "cs.GR",     <br>
+ keywords = {Computer Science - Graphics},   <br>
+     year = 2016,    <br>
+    month = mar,    <br>
+   adsurl = {http://adsabs.harvard.edu/abs/2016arXiv160306821Z},   <br>
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}   <br>
+}
+</div>
+<!-- Here is the link of the slide. -->
+	<hr class="line">
+	<div class="subtitle">
+		Acknowledgements
+	</div>
+	<div class="paperlink_body">
+We thank anonymous reviewers for encouragements and thoughtful
+suggestions. 
+<br><br>
+We thank the providers of the free 3D models used in this paper:
+Armadillo  from Stanford Computer Graphics Laboratory; Cactus from AIM@Shape; BumpPlane from Alec Jacobson.  We used
+Mitsuba[Mitsuba 2015} for rendering images. Our algorithms are implemented on <a href="http://meshdgp.github.io/index.html" >MeshDGP [Zhao 2016] Framework </a>. We also thank Libigl [Libigl 2016] for reference.
+
+<br><br> 
+	</div>
+
+	<hr class="line">
+	<div class="paperlink_body">
+	*Hui Zhao, Steven J. Gortler are currently working at Harvard.
+	</div>
+	
+	 
+	
+
+</div>
+
+</body></html>
