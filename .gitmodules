@@ -1,0 +1,3 @@
+[submodule "WebGL-ModelPre"]
+	path = WebGL-ModelPre
+	url = https://github.com/soapke/WebGL-ModelPre.git
