@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<title>Model Presentation</title>
+	<!-- color picker css-->
+	<link rel="stylesheet" href="css_normalmap/palette-color-picker.css">
+	<!-- MainPage css -->
+	<link rel="stylesheet" href="css_normalmap/MainPage.css">
+</head>
+<body>
+	<HR id="hr1" width="60%" color=#000000 SIZE=2>
+
+ 	<div class="button">
+		<a href="#" id="wireframe" onclick="changeRenderer();" style=" font-size:18px; font-weight:bold;" >Wireframe Render</a>
+		<br/>
+		<br/>
+		<a href="#" id="wireframe" onclick="changeWireframe();" style=" font-size:18px; font-weight:bold;" >Wireframe Modle</a>
+		<br/>
+		<br/>
+		<a href="#" id="saveLink" onclick="saveAsImage();" style=" font-size:18px; font-weight:bold;" >Export Render Image</a>
+		<br/>		
+	</div>
+
+	<div id='colorPicker'>
+		<p style=" font-size:18px; font-weight:bold; " >Select Color</p>
+		<input type="text" id="color" name="COLOR_PICKER" value="#8763ea">
+	</div>
+		
+	<HR id="hr2" width="60%" color=#000000 SIZE=2>
+
+		<!-- Model Table -->
+	<table class = "modelTable" id="modelTable" align="center">
+
+	<!-- row 1 header-->
+	<tr>
+		<td>Dense Model</td>
+		<td>Simplified Model</td>
+		<td>Normal Map</td>
+		<td>Conformal Disk</td>
+		<td>OMT Disk</td>
+		<td>Normal Map Pic</td>
+	</tr>
+
+	<!-- row 2 angel -->
+	<tr>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/angel/angel_origin.obj';
+						loadOMT();
+					}">
+	Angel</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/angel/angel_2k.obj';
+						isNormalMap = false;
+						load2k();
+					}">
+	Angel_2k</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/angel/angel_2k.obj';
+						textureUrl = 'Models/textures/normalMap/normalMap_angel.png';
+						isNormalMap = true;
+						load2k();
+					}">
+	Angel_2k_Nor</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/angel/angel_omt_disk.obj';
+						diskModelType = 'OMT';
+						loadDiskModel();
+					}">
+	Angel_OMT_Disk</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/angel/angel_conformal_disk.obj';
+						diskModelType = 'Conformal';
+						loadDiskModel();
+					}">
+	Angel_Conformal_Disk</a></td>
+	<td><a onclick="if(!isLoading){
+						textureUrl = 'Models/textures/normalMap/normalMap_angel.png';
+						showNormalMap();
+					}">
+	Angel_Nor_Pic</a></td>
+	</tr>
+
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+
+	<!-- row 3 buddha -->
+	<tr>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/buddha/buddha_origin.obj';
+						loadOMT();
+					}">
+	Buddha</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/buddha/buddha_2k.obj';
+						isNormalMap = false;
+						load2k();
+					}">
+	Buddha_2k</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/buddha/buddha_2k.obj';
+						textureUrl = 'Models/textures/normalMap/normalMap_buddha.png';
+						isNormalMap = true;
+						load2k();
+					}">
+	Buddha_2k_Nor</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/buddha/buddha_omt_disk.obj';
+						diskModelType = 'OMT';
+						loadDiskModel();
+					}">
+	Buddha_OMT_Disk</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/buddha/buddha_conformal_disk.obj';
+						diskModelType = 'Conformal';
+						loadDiskModel();
+					}">
+	Buddha_Conformal_Disk</a></td>
+	<td><a onclick="if(!isLoading){
+						textureUrl = 'Models/textures/normalMap/normalMap_buddha.png';
+						showNormalMap();
+					}">
+	Buddha_Nor_Pic</a></td>
+	</tr>
+
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+
+	<!-- row 4 baicai -->
+	<tr>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/lowpoly/lowpoly_origin.obj';
+						loadOMT();
+					}">
+	Baicai</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/lowpoly/lowpoly_2k.obj';
+						isNormalMap = false;
+						load2k();
+					}">
+	Baicai_2k</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/lowpoly/lowpoly_2k.obj';
+						textureUrl = 'Models/textures/normalMap/normalMap_lowpoly.png';
+						isNormalMap = true;
+						load2k();
+					}">
+	Baicai_2k_Nor</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/lowpoly/lowpoly_omt_disk.obj';
+						diskModelType = 'OMT';
+						loadDiskModel();
+					}">
+	Baicai_OMT_Disk</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/lowpoly/lowpoly_conformal_disk.obj';
+						diskModelType = 'Conformal';
+						loadDiskModel();
+					}">
+	Baicai_Conformal_Disk</a></td>
+	<td><a onclick="if(!isLoading){
+						textureUrl = 'Models/textures/normalMap/normalMap_lowpoly.png';
+						showNormalMap();
+					}">
+	Baicai_Nor_Pic</a></td>
+	</tr>
+
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+
+	<!-- row 5 bird_skull -->
+	<tr>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/bird_skull/bird_skull_origin.obj';
+						loadOMT();
+					}">
+	Bird_skull</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/bird_skull/bird_skull_2k.obj';
+						isNormalMap = false;
+						load2k();
+					}">
+	Bird_skull_2k</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/bird_skull/bird_skull_2k.obj';
+						textureUrl = 'Models/textures/normalMap/normalMap_bird_skull.png';
+						isNormalMap = true;
+						load2k();
+					}">
+	Bird_skull_2k_Nor</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/bird_skull/bird_skull_omt_disk.obj';
+						diskModelType = 'OMT';
+						loadDiskModel();
+					}">
+	Bird_skull_OMT_Disk</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/bird_skull/bird_skull_conformal_disk.obj';
+						diskModelType = 'Conformal';
+						loadDiskModel();
+					}">
+	Bird_skull_Conformal_Disk</a></td>
+	<td><a onclick="if(!isLoading){
+						textureUrl = 'Models/textures/normalMap/normalMap_bird_skull.png';
+						showNormalMap();
+					}">
+	Bird_skull_Nor_Pic</a></td>
+	</tr>
+
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+
+	<!-- row 6 dog_head -->
+	<tr>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/dog_head/dog_head_origin.obj';
+						loadOMT();
+					}">
+	Dog_head</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/dog_head/dog_head_2k.obj';
+						isNormalMap = false;
+						load2k();
+					}">
+	Dog_head_2k</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/dog_head/dog_head_2k.obj';
+						textureUrl = 'Models/textures/normalMap/normalMap_dog_head.png';
+						isNormalMap = true;
+						load2k();
+					}">
+	Dog_head_2k_Nor</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/dog_head/dog_head_omt_disk.obj';
+						diskModelType = 'OMT';
+						loadDiskModel();
+					}">
+	Dog_head_OMT_Disk</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/dog_head/dog_head_conformal_disk.obj';
+						diskModelType = 'Conformal';
+						loadDiskModel();
+					}">
+	Dog_head_Conformal_Disk</a></td>
+	<td><a onclick="if(!isLoading){
+						textureUrl = 'Models/textures/normalMap/normalMap_dog_head.png';
+						showNormalMap();
+					}">
+	Dog_head_Nor_Pic</a></td>
+	</tr>
+
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+
+	<!-- row 7 dragon -->
+	<tr>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/dragon/dragon_origin.obj';
+						loadOMT();
+					}">
+	Dragon</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/dragon/dragon_2k.obj';
+						isNormalMap = false;
+						load2k();
+					}">
+	Dragon_2k</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/dragon/dragon_2k.obj';
+						textureUrl = 'Models/textures/normalMap/normalMap_dragon.png';
+						isNormalMap = true;
+						load2k();
+					}">
+	Dragon_2k_Nor</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/dragon/dragon_omt_disk.obj';
+						diskModelType = 'OMT';
+						loadDiskModel();
+					}">
+	Dragon_OMT_Disk</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/dragon/dragon_conformal_disk.obj';
+						diskModelType = 'Conformal';
+						loadDiskModel();
+					}">
+	Dragon_Conformal_Disk</a></td>
+	<td><a onclick="if(!isLoading){
+						textureUrl = 'Models/textures/normalMap/normalMap_dragon.png';
+						showNormalMap();
+					}">
+	Dragon_Nor_Pic</a></td>
+	</tr>
+
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+
+	<!-- row 8 fish -->
+	<tr>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/fish/fish_origin.obj';
+						loadOMT();
+					}">
+	Fish</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/fish/fish_2k.obj';
+						isNormalMap = false;
+						load2k();
+					}">
+	Fish_2k</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/fish/fish_2k.obj';
+						textureUrl = 'Models/textures/normalMap/normalMap_fish.png';
+						isNormalMap = true;
+						load2k();
+					}">
+	Fish_2k_Nor</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/fish/fish_omt_disk.obj';
+						diskModelType = 'OMT';
+						loadDiskModel();
+					}">
+	Fish_OMT_Disk</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/fish/fish_conformal_disk.obj';
+						diskModelType = 'Conformal';
+						loadDiskModel();
+					}">
+	Fish_Conformal_Disk</a></td>
+	<td><a onclick="if(!isLoading){
+						textureUrl = 'Models/textures/normalMap/normalMap_fish.png';
+						showNormalMap();
+					}">
+	Fish_Nor_Pic</a></td>
+	</tr>
+
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+
+	<!-- row 9 gargoyle -->
+	<tr>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/gargoyle/gargoyle_origin.obj';
+						loadOMT();
+					}">
+	Gargoyle</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/gargoyle/gargoyle_2k.obj';
+						isNormalMap = false;
+						load2k();
+					}">
+	Gargoyle_2k</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/gargoyle/gargoyle_2k.obj';
+						textureUrl = 'Models/textures/normalMap/normalMap_gargoyle.png';
+						isNormalMap = true;
+						load2k();
+					}">
+	Gargoyle_2k_Nor</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/gargoyle/gargoyle_omt_disk.obj';
+						diskModelType = 'OMT';
+						loadDiskModel();
+					}">
+	Gargoyle_OMT_Disk</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/gargoyle/gargoyle_conformal_disk.obj';
+						diskModelType = 'Conformal';
+						loadDiskModel();
+					}">
+	Gargoyle_Conformal_Disk</a></td>
+	<td><a onclick="if(!isLoading){
+						textureUrl = 'Models/textures/normalMap/normalMap_gargoyle.png';
+						showNormalMap();
+					}">
+	Gargoyle_Nor_Pic</a></td>
+	</tr>
+
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+
+	<!-- row 10 hulk -->
+	<tr>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/hulk/hulk_origin.obj';
+						loadOMT();
+					}">
+	Hulk</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/hulk/hulk_2k.obj';
+						isNormalMap = false;
+						load2k();
+					}">
+	Hulk_2k</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/hulk/hulk_2k.obj';
+						textureUrl = 'Models/textures/normalMap/normalMap_hulk.png';
+						isNormalMap = true;
+						load2k();
+					}">
+	Hulk_2k_Nor</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/hulk/hulk_omt_disk.obj';
+						diskModelType = 'OMT';
+						loadDiskModel();
+					}">
+	Hulk_OMT_Disk</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/hulk/hulk_conformal_disk.obj';
+						diskModelType = 'Conformal';
+						loadDiskModel();
+					}">
+	Hulk_Conformal_Disk</a></td>
+	<td><a onclick="if(!isLoading){
+						textureUrl = 'Models/textures/normalMap/normalMap_hulk.png';
+						showNormalMap();
+					}">
+	Hulk_Nor_Pic</a></td>
+	</tr>
+
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+
+	<!-- row 11 oldface -->
+	<tr>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/oldface/oldface_origin.obj';
+						loadOMT();
+					}">
+	Oldface</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/oldface/oldface_2k.obj';
+						isNormalMap = false;
+						load2k();
+					}">
+	Oldface_2k</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/oldface/oldface_2k.obj';
+						textureUrl = 'Models/textures/normalMap/normalMap_oldface.png';
+						isNormalMap = true;
+						load2k();
+					}">
+	Oldface_2k_Nor</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/oldface/oldface_omt_disk.obj';
+						diskModelType = 'OMT';
+						loadDiskModel();
+					}">
+	Oldface_OMT_Disk</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/oldface/oldface_conformal_disk.obj';
+						diskModelType = 'Conformal';
+						loadDiskModel();
+					}">
+	Oldface_Conformal_Disk</a></td>
+	<td><a onclick="if(!isLoading){
+						textureUrl = 'Models/textures/normalMap/normalMap_oldface.png';
+						showNormalMap();
+					}">
+	Oldface_Nor_Pic</a></td>
+	</tr>
+
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+
+	<!-- row 11 vvp -->
+	<tr>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/vvp/vvp_origin.obj';
+						loadOMT();
+					}">
+	Vvp</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/vvp/vvp_2k.obj';
+						isNormalMap = false;
+						load2k();
+					}">
+	Vvp_2k</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/vvp/vvp_2k.obj';
+						textureUrl = 'Models/textures/normalMap/normalMap_vvp.png';
+						isNormalMap = true;
+						load2k();
+					}">
+	Vvp_2k_Nor</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/vvp/vvp_omt_disk.obj';
+						diskModelType = 'OMT';
+						loadDiskModel();
+					}">
+	Vvp_OMT_Disk</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/vvp/vvp_conformal_disk.obj';
+						diskModelType = 'Conformal';
+						loadDiskModel();
+					}">
+	Vvp_Conformal_Disk</a></td>
+	<td><a onclick="if(!isLoading){
+						textureUrl = 'Models/textures/normalMap/normalMap_vvp.png';
+						showNormalMap();
+					}">
+	Vvp_Nor_Pic</a></td>
+	</tr>
+
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+
+	<!-- row 11 yoda -->
+	<tr>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/yoda/yoda_origin.obj';
+						loadOMT();
+					}">
+	Yoda</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/yoda/yoda_2k.obj';
+						isNormalMap = false;
+						load2k();
+					}">
+	Yoda_2k</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/yoda/yoda_2k.obj';
+						textureUrl = 'Models/textures/normalMap/normalMap_yoda.png';
+						isNormalMap = true;
+						load2k();
+					}">
+	Yoda2k_Nor</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/yoda/yoda_omt_disk.obj';
+						diskModelType = 'OMT';
+						loadDiskModel();
+					}">
+	Yoda_OMT_Disk</a></td>
+	<td><a onclick="if(!isLoading){
+						modelUrl = 'Models/yoda/yoda_conformal_disk.obj';
+						diskModelType = 'Conformal';
+						loadDiskModel();
+					}">
+	Yoda_Conformal_Disk</a></td>
+	<td><a onclick="if(!isLoading){
+						textureUrl = 'Models/textures/normalMap/normalMap_yoda.png';
+						showNormalMap();
+					}">
+	Yoda_Nor_Pic</a></td>
+	</tr>
+
+	<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+
+	</table>
+
+	
+	<!-- loading prompt -->
+	<div id="modelType">
+		<p id="type"></p>
+	</div>
+
+	<!-- progress bar -->
+	<div id="progress">
+		<p id="demo"></p>
+	</div>
+
+	<div id="bar" style="width:0%;">
+		
+	</div>  
+	
+	<!-- JS -->
+	<!-- color picker -->
+	<script type="text/javascript" src="js_normalmap/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js_normalmap/palette-color-picker.js"></script>
+	
+	<!-- Three.js -->
+	<script type="text/javascript" src="js_normalmap/three.js"></script>
+	<script type="text/javascript" src="js_normalmap/renderers/CanvasRenderer.js"></script>
+	<script type="text/javascript" src="js_normalmap/renderers/Projector.js"></script>
+	<script type="text/javascript" src="js_normalmap/Detector.js"></script>
+	<script type="text/javascript" src="js_normalmap/loaders/OBJLoader.js"></script>
+	<script type="text/javascript" src="js_normalmap/controls/OrbitControls.js"></script>
+
+	<!-- initialize Table Style & Color Picker -->
+	<script type="text/javascript" src="js_normalmap/TableColorPreset.js"></script>
+	<script type="text/javascript" src="js_normalmap/ColorPickerPreset.js"></script>
+
+	<!-- Three.js Rendering -->
+	<script type="text/javascript" src="js_normalmap/ModelPreRendering.js"></script>
+
+	</body>
+</html>
