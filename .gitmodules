@@ -1,3 +1,6 @@
 [submodule "Models"]
 	path = Models
 	url = https://github.com/soapke/Models.git
+[submodule "jekyll-now"]
+	path = jekyll-now
+	url = https://github.com/barryclark/jekyll-now.git
