@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GPUImage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<meta http-equiv="Content-Type" content="texthtml; charset=gb2312">
+
+
+    <!-- Le styles -->
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+	<link href="../../css/dashboard.css" rel="stylesheet">
+    <style type="text/css">
+    body {
+        padding-top: 20px;
+        padding-bottom: 60px;
+      }
+
+      /* Custom container */
+      .container {
+        margin: 0 auto;
+        max-width: 1000px;
+      }
+      .container > hr {
+        margin: 60px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 80px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 100px;
+        line-height: 1;
+      }
+      .jumbotron .lead {
+        font-size: 24px;
+        line-height: 1.25;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+
+
+      /* Customize the navbar links to be fill the entire space of the .navbar */
+      .navbar .navbar-inner {
+        padding: 0;
+      }
+      .navbar .nav {
+        margin: 0;
+        display: table;
+        width: 100%;
+      }
+      .navbar .nav li {
+        display: table-cell;
+        width: 1%;
+        float: none;
+      }
+      .navbar .nav li a {
+      
+            font-weight: bold;
+        text-align: center;
+        border-left: 1px solid rgba(255,255,255,.75);
+        border-right: 1px solid rgba(0,0,0,.1);
+      
+      }
+      .navbar .nav li:first-child a {
+        border-left: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .navbar .nav li:last-child a {
+        border-right: 0;
+        border-radius: 0 3px 3px 0;
+      }
+	
+ .jumbotron {
+        margin: 80px 0;
+        text-align: center;
+		
+      }
+      .jumbotron h1 {
+        font-size: 100px;
+        line-height: 1;
+		margin-top:300px;
+      }
+      .jumbotron .lead {
+        font-size: 24px;
+        line-height: 1.25;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+	  .carousel img {
+	   
+        width: 600px;
+        height: 400px;
+      }
+	   .carousel inner {
+	   margin-top:2px;
+      }
+	
+    </style>
+    <link href="../../css/bootstrap-responsive.css" rel="stylesheet">
+  </head>
+
+  
+  
+  
+  <body background="../../img/Background/background.png">
+    <div class="container">
+
+	
+	 <!-- 目录 -->
+      <div class="masthead">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+			<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+			 <div class="nav-collapse collapse">
+              <ul class="nav">
+                
+					 <li class="active" ><a href="../..//MeshDGP.html">Home</a></li>
+               <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Book<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+				     <h5><a href="../Book/MeshBasic.html" >1. Mesh Processing Basic</a></h5>
+                    <h5><a href="../Book/Mesh Processing Advanced.html" target="_parent">2. Mesh Processing Advanced </a></h5>
+					<h5><a href="../Book/Mesh Parameterization.html" target="_parent">3. Parameterization</a></h5>
+					 <h5><a href="../Book/OpenGL Programming.html" target="_parent">4. OpenGL</a></h5>
+                    <h5><a href="../Book/GLSL Programming.html" >5. GLSL</a></h5>
+				    	 <h5><a href=" " target="_parent">6. Discrete Exterior Calculus(Incoming)</a></h5>
+                    <h5><a href=" " >7. Vector Field Design and Quadrangulation(Incoming)</a></h5>
+                     <h5><a href=" " >8. Surface Reconstruction(Incoming)</a></h5>
+                     
+                 </ul>
+                </li>
+			  <li class="dropdown"><a href="../Algorithm/Algorithm.html">Algorithm</a></li>
+			  <li class="dropdown"><a href="../Download/Download.html">DownLoad</a></li>
+              </ul>
+            </div>
+			</div>
+          </div>
+        </div>
+      </div>
+     
+
+	 <!-- 主要内容 -->  
+ <div class="container-fluid">
+      <div class="row">
+	  <!--导航器-->
+        <div class="col-sm-3 col-md-2 sidebarone">
+
+           <li> <a style="color:#FF2D2D;font-size:20px">Navigator</a></li>
+           <br>
+     
+		    <li> <a>Texture：</a></li>
+            <li><a href="#Brick" >Brick</a></li>
+            <li><a href="#Chessboard">Chessboard</a></li>
+		    <li><a href="#Lattice">Lattice</a></li>
+			<li><a href="#Strip">Strip</a></li>
+			 <li><a href="#ToyBall">ToyBall</a></li>
+         
+		  <br>
+
+		    <li> <a>Noise：</a></li>
+            <li><a href="#Erode">Erode</a></li>
+            <li><a href="#Fire">Fire</a></li>
+			<li><a href="#Cloud">Cloud</a></li>
+            <li><a href="#Wood">Wood</a></li>
+		    <li><a href="#Granite">Granite</a></li>
+			<li><a href="#Marble">Marble</a></li>
+       
+		  <br>
+    
+		    <li > <a>Lighting：</a></li>
+            <li><a href="#Spherical harmonics">Spherical</a></li>
+			<li><a href="#Hemisphere Lighting">Hemisphere</a></li>
+        <br>
+		    <li> <a>NPR ：</a></li>
+            <li><a href="#Toon Shader">Toon Shader</a></li>
+			<li><a href="#Gooch">Gooch</a></li>
+			<li><a href="#Hatch">Hatch</a></li>
+			<li><a href="#Mandelbrot">Mandelbrot</a></li>
+			<li><a href="#Polka dot">Polka dot</a></li>	
+          </ul>
+		   <br>
+            <li><a href="#Top">Top</a></li>
+        </div>
+     <!--图片展示-->
+        <div id="Brick" class="item active" style="width:80%; margin-left:21.5%">
+          <img src="../../img/GPU/Brick/图片50.png" alt="" width="251px" height="250px" style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		   <img src="../../img/GPU/Brick/图片51.png" alt="" width="251px" height="250px" style="border-right:0px ;margin-right:-5px;border-bottom:0px">
+		    <img src="../../img/GPU/Brick/图片52.png" alt="" width="251px" height="250px" style="border-bottom:0px">
+        </div>
+		
+		 <div id="Chessboard" class="item active" style="width:80%; margin-left:21.5%">
+          <img src="../../img/GPU/Chessboard/图片53.png" alt="" width="251px" height="250px" style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		   <img src="../../img/GPU/Chessboard/图片55.png" alt="" width="251px" height="250px" style="border-right:0px ;margin-right:-5px;border-bottom:0px">
+		    <img src="../../img/GPU/Chessboard/图片57.png" alt="" width="251px" height="250px" style="border-bottom:0px">
+        </div>
+		
+		 <div id="Cloud" class="item active" style="width:80%; margin-left:21.5%">
+          <img src="../../img/GPU/Cloud/图片1.png" alt="" width="251px" height="250px" style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		   <img src="../../img/GPU/Cloud/图片2.png" alt="" width="251px" height="250px "style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		    <img src="../../img/GPU/Cloud/图片21.png" alt="" width="251px" height="250px"style="border-bottom:0px">
+        </div>
+		
+		
+		 <div id="Erode" class="item active" style="width:80%; margin-left:21.5%">
+          <img src="../../img/GPU/Erode/图片38.png" alt="" width="251px" height="250px" style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		   <img src="../../img/GPU/Erode/图片39.png" alt="" width="251px" height="250px " style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		    <img src="../../img/GPU/Erode/图片40.png" alt="" width="251px" height="250px"style="border-bottom:0px">
+        </div>
+		
+		<div id="Fire" class="item active" style="width:80%; margin-left:21.5%">
+          <img src="../../img/GPU/Fire/图片22.png" alt="" width="251px" height="250px" style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		   <img src="../../img/GPU/Fire/图片23.png" alt="" width="251px" height="250px" style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		    <img src="../../img/GPU/Fire/图片24.png" alt="" width="251px" height="250px"style="border-bottom:0px">
+        </div>
+		
+		<div id="Gooch" class="item active" style="width:80%; margin-left:21.5%">
+          <img src="../../img/GPU/Gooch/图片7.png" alt="" width="251px" height="250px" style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		   <img src="../../img/GPU/Gooch/图片8.png" alt="" width="251px" height="250px" style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		    <img src="../../img/GPU/Gooch/图片9.png" alt="" width="251px" height="250px"style="border-bottom:0px">
+        </div>
+		
+		<div id="Granite" class="item active" style="width:80%; margin-left:21.5%">
+          <img src="../../img/GPU/Granite/图片35.png" alt="" width="251px" height="250px"style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		   <img src="../../img/GPU/Granite/图片36.png" alt="" width="251px" height="250px"style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		    <img src="../../img/GPU/Granite/图片37.png" alt="" width="251px" height="250px"style="border-bottom:0px">
+        </div>
+		
+		<div id="Hatch" class="item active" style="width:80%; margin-left:21.5%">
+          <img src="../../img/GPU/Hatch/图片5.png" alt="" width="251px" height="250px"style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		   <img src="../../img/GPU/Hatch/图片6.png" alt="" width="251px" height="250px"style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		    <img src="../../img/GPU/Hatch/图片4.png" alt="" width="251px" height="250px"style="border-bottom:0px">
+        </div>
+		
+		
+		<div id="Hemisphere Lighting" class="item active" style="width:80%; margin-left:21.5%">
+          <img src="../../img/GPU/Hemisphere Lighting/图片75.png" alt="" width="251px" height="250px"style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		   <img src="../../img/GPU/Hemisphere Lighting/图片73.png" alt="" width="251px" height="250px"style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		    <img src="../../img/GPU/Hemisphere Lighting/图片74.png" alt="" width="251px" height="250px"style="border-bottom:0px">
+        </div>
+		
+		<div id="Lattice" class="item active" style="width:80%; margin-left:21.5%">
+          <img src="../../img/GPU/Lattice/图片67.png" alt="" width="251px" height="250px"style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		   <img src="../../img/GPU/Lattice/图片68.png" alt="" width="251px" height="250px"style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		    <img src="../../img/GPU/Lattice/图片70.png" alt="" width="251px" height="250px"style="border-bottom:0px">
+        </div>
+ 
+       <div id="Mandelbrot" class="item active" style="width:80%; margin-left:21.5%">
+          <img src="../../img/GPU/Mandelbrot/图片17.png" alt="" width="251px" height="250px"style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		   <img src="../../img/GPU/Mandelbrot/图片18.png" alt="" width="251px" height="250px"style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		    <img src="../../img/GPU/Mandelbrot/图片19.png" alt="" width="251px" height="250px"style="border-bottom:0px">
+        </div>
+		
+		 <div id="Marble" class="item active" style="width:80%; margin-left:21.5%">
+          <img src="../../img/GPU/Marble/图片31.png" alt="" width="251px" height="250px"style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		   <img src="../../img/GPU/Marble/图片32.png" alt="" width="251px" height="250px"style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		    <img src="../../img/GPU/Marble/图片33.png" alt="" width="251px" height="250px"style="border-bottom:0px">
+        </div>
+		
+		 <div id="Polka dot" class="item active" style="width:80%; margin-left:21.5%">
+          <img src="../../img/GPU/Polka dot/图片12.png" alt="" width="251px" height="250px"style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		   <img src="../../img/GPU/Polka dot/图片14.png" alt="" width="251px" height="250px"style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		    <img src="../../img/GPU/Polka dot/图片15.png" alt="" width="251px" height="250px"style="border-bottom:0px">
+        </div>
+		
+		 <div id="Spherical harmonics" class="item active" style="width:80%; margin-left:21.5%">
+          <img src="../../img/GPU/Spherical harmonics/图片77.png" alt="" width="251px" height="250px"style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		   <img src="../../img/GPU/Spherical harmonics/图片78.png" alt="" width="251px" height="250px"style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		    <img src="../../img/GPU/Spherical harmonics/图片79.png" alt="" width="251px" height="250px"style="border-bottom:0px">
+        </div>
+		
+		<div id="Strip" class="item active" style="width:80%; margin-left:21.5%">
+          <img src="../../img/GPU/Strip/图片46.png" alt="" width="251px" height="250px"style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		   <img src="../../img/GPU/Strip/图片47.png" alt="" width="251px" height="250px"style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		    <img src="../../img/GPU/Strip/图片48.png" alt="" width="251px" height="250px"style="border-bottom:0px">
+        </div>
+		
+		<div id="Toon Shader" class="item active" style="width:80%; margin-left:21.5%">
+          <img src="../../img/GPU/Toon Shader/图片1.png" alt="" width="251px" height="250px"style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		   <img src="../../img/GPU/Toon Shader/图片2.png" alt="" width="251px" height="250px"style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		    <img src="../../img/GPU/Toon Shader/图片3.png" alt="" width="251px" height="250px"style="border-bottom:0px">
+        </div>
+		<div id="ToyBall" class="item active" style="width:80%; margin-left:21.5%">
+          <img src="../../img/GPU/ToyBall/图片64.png" alt="" width="251px" height="250px"style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		   <img src="../../img/GPU/ToyBall/图片62.png" alt="" width="251px" height="250px"style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		    <img src="../../img/GPU/ToyBall/图片63.png" alt="" width="251px" height="250px"style="border-bottom:0px">
+        </div>
+		
+		<div id="Wood" class="item active" style="width:80%; margin-left:21.5%">
+          <img src="../../img/GPU/Wood/图片26.png" alt="" width="251px" height="250px"style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		   <img src="../../img/GPU/Wood/图片27.png" alt="" width="251px" height="250px"style="border-right:0px;margin-right:-5px;border-bottom:0px">
+		    <img src="../../img/GPU/Wood/图片28.png" alt="" width="251px" height="250px"style="border-bottom:0px">
+        </div>
+      </div>
+    </div>
+	
+            
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+   <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap-transition.js"></script>
+    <script src="../../js/bootstrap-alert.js"></script>
+    <script src="../../js/bootstrap-modal.js"></script>
+    <script src="../../js/bootstrap-dropdown.js"></script>
+    <script src="../../js/bootstrap-scrollspy.js"></script>
+    <script src="../../js/bootstrap-tab.js"></script>
+    <script src="../../js/bootstrap-tooltip.js"></script>
+    <script src="../../js/bootstrap-popover.js"></script>
+    <script src="../../js/bootstrap-button.js"></script>
+    <script src="../../js/bootstrap-collapse.js"></script>
+    <script src="../../js/bootstrap-carousel.js"></script>
+    <script src="../../js/bootstrap-typeahead.js"></script>
+    <script src="../../js/automatic-carousel.js"></script>
+
+
+  </body>
+</html>
